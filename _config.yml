@@ -5,7 +5,7 @@ header-img: img/home-bg.jpg
 email: jenny.zhengjunyan@gmail.com
 description: "燕子也有当大神的梦想"
 keyword: "JavaScript，CSS，HTML，前端开发"
-url: "smart_Jenny.github.io"              # your host, for absolute URL
+url: "smart-Jenny.github.io"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 
@@ -45,7 +45,7 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: smart_Jenny
+duoshuo_username: smart-Jenny
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
@@ -57,7 +57,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: smart_Jenny.github.io
+ga_domain: smart-Jenny.github.io
 
 
 
