@@ -62,7 +62,7 @@ oh，回到weinre调试这个话题~现在可以在html中这样引入js了：
 
 ![](/img/remote-debug/8.png)
 
-***参考资料***
+***参考资料：***
 
 [于江水-移动端前端开发调试](http://yujiangshui.com/multidevice-frontend-debug)
 
