@@ -3,7 +3,7 @@ layout: post
 title: jquery源码之整体架构分析
 date: 2015-11-24
 author: "Jenny"
-tags: [jquery,源码分析]
+tags: [jquery源码]
 ---
 
 jquery的整体代码架构简化如下：

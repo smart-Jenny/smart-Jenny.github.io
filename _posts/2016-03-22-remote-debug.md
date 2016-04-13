@@ -3,7 +3,7 @@ layout: post
 title: 远程调试H5：weinre+ngrok
 date: 2016-03-22
 author: "Jenny"
-tags: [html5,远程调试,weinre,ngrok]
+tags: [远程调试]
 ---
 
 最近做H5开发时，经常遇到在chrome模拟器上样式显示正常，在手机上却出现样式错误的情况，这时仅仅使用chrome模拟器来调试很难解决问题，于是开始琢磨怎么在PC端远程调试手机页面。

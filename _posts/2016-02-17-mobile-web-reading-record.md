@@ -3,7 +3,7 @@ layout: post
 title: 《移动Web手册》读书笔记
 date: 2016-02-17
 author: "Jenny"
-tags: [移动web开发,viewport]
+tags: [移动web]
 ---
 
 <h3>关于浏览器</h3>

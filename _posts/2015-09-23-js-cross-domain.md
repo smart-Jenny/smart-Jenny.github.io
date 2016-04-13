@@ -3,7 +3,7 @@ layout: post
 title: 浅谈js跨域问题
 date: 2015-09-23
 author: "Jenny"
-tags: [javascript,xss,csrf,跨域]
+tags: [javascript,跨域]
 ---
 
 > 所谓跨域，或者异源，是指主机名（域名）、协议、端口号只要有其一不同，就为不同的域（或源）。浏览器中有一个基本的策略，叫同源策略，即限制“源”自A的脚本只能操作“同源”页面的DOM。
