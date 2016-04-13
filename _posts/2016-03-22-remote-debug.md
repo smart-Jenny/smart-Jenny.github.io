@@ -50,7 +50,7 @@ weinre兼容性挺强，而且能支持微信端页面的调试，到此为止�
 
 ![](/img/remote-debug/5.jpg)
 
-其中地址：![](/img/remote-debug/6.png)中子域名由ngrok生成，每次启动可能不一样，可以使用下面命令自定义子域名，但需要付费用户才能使用- -
+其中地址：http://1af5499c.ngrok.io 中子域名由ngrok生成，每次启动可能不一样，可以使用下面命令自定义子域名，但需要付费用户才能使用- -
 
     ngrok http -subdomain=test 10.75.6.51:9999
 
@@ -62,7 +62,10 @@ oh，回到weinre调试这个话题~现在可以在html中这样引入js了：
 
 ![](/img/remote-debug/8.png)
 
-参考资料：
+** 参考资料 **
+
 [于江水-移动端前端开发调试](http://yujiangshui.com/multidevice-frontend-debug)
+
 [移动端调试工具-Weinre](http://www.cnblogs.com/chaojidan/p/4430213.html)
+
 [Remote Debugging Localhost With Weinre(and HTTPS Too)](http://www.undefinednull.com/2015/03/17/remote-debugging-localhost-with-weinre)
