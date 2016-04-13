@@ -9,6 +9,7 @@ tags: [javascript,xss,csrf,跨域]
 > 所谓跨域，或者异源，是指主机名（域名）、协议、端口号只要有其一不同，就为不同的域（或源）。浏览器中有一个基本的策略，叫同源策略，即限制“源”自A的脚本只能操作“同源”页面的DOM。
 
 先聊一下w3c的***CORS规范***：
+
 > CORS旨在定义一种规范让浏览器在接收到从提供者获取资源时能够决定是否应该将此资源分发给消费者作进一步处理。
 
 具体如下：
@@ -21,7 +22,7 @@ tags: [javascript,xss,csrf,跨域]
 
 要解决跨域的问题，有以下几种方法：
 
-1. 通过Jsonp跨域
+<h4>1、通过Jsonp跨域</h4>
 
 对于一段JavaScript脚本来说，其“源”与它存储的地址无关，而取决于脚本被加载的页面，例如我们在页面中使用<script>引入存储在其他域的脚本文件：
 
@@ -63,7 +64,7 @@ String handleData = request.getParameter("callback");//客户端的回调函数
 out.println(handleData+"("+resultJSON+")");//返回jsonp格式数据
 ```
 
-2. 修改document.domain来跨子域
+<h4>2、修改document.domain来跨子域</h4>
 
 www.a.com/1.html和a.com/2.html是不同域的，要使他们可以跨域访问，可通过修改document.domain来实现，即在两个页面中都设置：
 
@@ -71,11 +72,11 @@ www.a.com/1.html和a.com/2.html是不同域的，要使他们可以跨域访问�
 
 需要注意的是document.domain只能往父级修改，如a.com改为www.a.com是不被允许的，这也是此方法的局限性，只使用于跨子域访问。
 
-3. 使用window.name来跨域访问
+<h4>3、使用window.name来跨域访问</h4>
 
 window.name是同一浏览器窗口下载入的所有页面共享的数据字段，所有窗口都可以读写此字段的内容。所以假设a.com要访问b.com的数据，只需要在b.com中将数据放在window.name中，然后a.com从中取出即可。此方法适用于像iframe这样的嵌套页面架构。
 
-4. 使用HTML5的window.postMessage方法
+<h4>4、使用HTML5的window.postMessage方法</h4>
 
 假设要在a.com和b.com页面之间传递数据：
 
@@ -91,7 +92,7 @@ window.onMessage=function(e){
 
 下面谈一下跨域访问的一些安全性问题，主要是CSRF和XSS攻击问题。
 
-1. CSRF/XSRF攻击
+<h4>1、CSRF/XSRF攻击</h4>
 
 网上找到一个大神发的图，贴在这里观摩观摩：
 
@@ -103,7 +104,7 @@ window.onMessage=function(e){
 
 目前比较好的防止CSRF攻击的方法是***referer过滤校验+token验证***，即服务端检测JSON文件调用来源和检查token数据是否匹配。
 
-2. XSS攻击（XSS注入）
+<h4>2、XSS攻击（XSS注入）</h4>
 
 此攻击方法类似sql注入，即提交含有恶意脚本的数据到服务器，从而达到破坏页面甚至盗取cookie伪装登录等目的。例如，在a.com/index.ftl中有如下代码：`欢迎你，${username}`，这时恶意网站b.com传递参数：
 
