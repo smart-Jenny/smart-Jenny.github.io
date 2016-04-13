@@ -33,7 +33,7 @@ tags: [移动web开发,viewport]
 <h4>一些术语</h4>
 
 + 物理分辨率（DPI）：设备每英寸的点数;
-+ 设备像素比（DPR）：设备像素个数与理想视口的比，或者说物理设备像素：CSS逻辑像素。例如在iPhone 4设备屏幕中的物理像素数为640*960px,而CSS逻辑像素数为320*480像素。因此，使用大约4个物理像素来显示一个CSS像素。例如在iphone4设备屏幕物理像素是640×960px，而CSS逻辑像素是320×480px，因此，大约4个物理像素来显示一个CSS像素;
++ 设备像素比（DPR）：设备像素个数与理想视口的比，或者说物理设备像素：CSS逻辑像素。例如在iPhone 4设备屏幕中的物理像素数为640*960px,而CSS逻辑像素数为320*480像素。因此，使用大约4个物理像素来显示一个CSS像素。
 + dppx和dpi：dppx是1像素单位中的点数，dpi是1英寸单位中的点数，由于在CSS标准中，1英寸=96像素，所以1dppx=96dpi。
 
 <h4>meta视口</h4>
@@ -48,7 +48,9 @@ tags: [移动web开发,viewport]
 + minimum-scale和maximum-scale：设置最小/最大的缩放程度;
 + user-scalable：是否阻止用户进行缩放。这很邪恶，应该无视它。
 
-<h4>媒体查询：其实就是CSS的if语句</h4>
+<h4>媒体查询</h4>
+
+其实就是CSS的if语句。
 
 <h4>媒体查询与js属性相对应：</h4>
 
@@ -58,7 +60,7 @@ tags: [移动web开发,viewport]
 + 设备屏幕比：window.devicePixelRatio;
 + 屏幕方向：window.orientation。
 
-<h4>** 参考资料 **</h4>
+<h4>参考资料</h4>
 
 + <a href="http://weizhifeng.net/viewports.html">两个viewport的故事（第一部分）</a>
 + <a href="http://weizhifeng.net/viewports2.html">两个viewport的故事（第二部分）</a>
