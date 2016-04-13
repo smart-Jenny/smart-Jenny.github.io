@@ -37,9 +37,7 @@ tags: [移动web开发,viewport]
 
 + width：设置布局视口的宽度为特定的值，设为"device-width"将布局视口设置成跟理想视口一致，设备旋转时Safari不支持自动将布局视口调整成理想视口（init-scale=1能解决这个问题）;
 + init-scale：设置页面的初始缩放程度，缩放程度跟视觉视口尺寸是逆相关的，一般设置成1时，视觉视口尺寸和理想视口尺寸一样（IE10有着跟Safari完全相反的问题，使用width=device-width可解决），得出完美的meta视口：
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+```<meta name="viewport" content="width=device-width, initial-scale=1">```
 + minimum-scale和maximum-scale：设置最小/最大的缩放程度;
 + user-scalable：是否阻止用户进行缩放。这很邪恶，应该无视它。
 <h4>媒体查询</h4>
